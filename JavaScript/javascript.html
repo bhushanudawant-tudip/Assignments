@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+
+var x;
+
+   x = 1;
+    setInterval(change, 1000);
+
+
+function change() {
+ col = "white";
+    if (x === 1) {
+        color = "red";
+	    document.getElementById("red").style.backgroundColor = color;
+document.getElementById("green").style.backgroundColor = col;
+        x = 2;
+    } else {
+        color = "green";
+            document.getElementById("green").style.backgroundColor = color;
+document.getElementById("red").style.backgroundColor = col;
+        x = 1;
+    }
+
+
+ 
+}
+
+</script>
+</head>
+<body>
+
+<div id="green">dd</div>
+<div id="red">dd</div>
+</body>
+</html>
+
